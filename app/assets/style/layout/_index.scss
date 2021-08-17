@@ -1,0 +1,48 @@
+.banner {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg");
+  background-position: center;
+  background-size: cover;
+  height: 480px;
+}
+.headline-section .col {
+  @include mobile() {
+    margin-top: 254px;
+  }
+}
+.healine-btn-area {
+  width: 328px;
+  @include mobile() {
+    width: 345px;
+  }
+  .btn {
+    width: 160px;
+    @include mobile() {
+      width: 165px;
+    }
+  }
+}
+
+.nav-section {
+  border-bottom: 1px solid #707070;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.special-exhibitions {
+  padding-top: 60px;
+}
+
+@include pad2 {
+  .exhibitions-title,
+  .exhibitions-content {
+    width: 540px;
+    margin-right: 133px;
+  }
+  .exhibitions-content-right {
+    width: 39px;
+    height: 100%;
+  }
+}
